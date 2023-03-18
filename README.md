@@ -1,1 +1,1 @@
-# Commschool-Frontend course
+# Commschool: Front-end course
