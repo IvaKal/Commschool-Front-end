@@ -1,0 +1,119 @@
+.nav__lists li {
+    color: red;
+}
+.container a:first-child{
+    color: red;
+}
+.container a:last-child{
+    color: blue;
+}
+
+tr:nth-child(odd){
+    background-color: yellow;
+}
+tr:nth-child(even){
+    background-color: blue;
+}
+tr:nth-child(3){
+    background-color: red;
+}
+tr:nth-child(3n+1){
+    background-color: green;
+}
+:disabled{
+    border: 2px solid red;
+    color: red;
+}
+:checked + span {
+    color: red;
+    font-weight: bold;
+}
+:required{
+    border: 2px solid pink;
+}
+
+.text:first-letter{
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+}
+.text::first-line{
+    color: green;
+}
+.warning::before{
+    content: "Warning";
+    font-weight: bold;
+    color: red;
+}
+.warning::after{
+    content: "Be carefull";
+    font-weight: bold;
+    color: orange;
+}
+/* input[type="submit"]:required{
+    border: 2px solid red;
+} */
+::selection{
+    color: white;
+    background-color: red;
+}
+
+input[type="text"]{
+    border: 2px solid red;
+}
+
+/* Static
+Realtive
+Fixed
+Abosolute
+Sticky */
+.static{
+    position: static;
+    border: 3px solid green;
+    /* background-color: white; */
+    color: white;
+}
+.relative{
+    position: relative;
+    border: 3px solid green;
+    background-color: black;
+    bottom: 50px;
+    z-index: -1;
+}
+/* .fixed{
+    position: fixed;
+    background-color: red;
+    top: 0px;
+} */
+.absolute{
+    position: absolute;
+    top: 50%;
+    background-color: aqua;
+}
+img{
+    width: 100%;
+}
+.wrapper{
+    position: relative;
+}
+.image{
+    position: relative;
+    
+}
+.text-wrapper{
+    position: absolute;
+    z-index: 9;
+    color: white;
+    top: 0;
+}
+
+.sticky{
+    background-color: aquamarine;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    width: 1280px;
+    margin: 0 auto;
+}
