@@ -5,5 +5,5 @@
 ### L4 - Sections, class, columns, box model, CSS...
 ### L5 - selectors, Position properties, childs...
 ### L6 - Figma, Responsive, Columnes
-### L7 - Animation,
-### L8 - Bootstrap
+### L7 - Animation, @Media
+### L8 - Bootstrap, @Keyframes
