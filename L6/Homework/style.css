@@ -1,0 +1,270 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("https://fonts.googleapis.com/css?family=Open Sans");
+}
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+nav{
+    width: 1180px;
+    margin: 0 auto;
+}
+.box_layout{
+    width: 1180px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.logo{
+    width: 78.08px;
+    height: 28.49px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav_items ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+li{
+    color: #9893A3;
+}
+.active{
+    color: #2f2e41;
+    border-bottom: 4px solid #9E99FF;
+}
+.btn{
+    width: 102px;
+    height: 51px;
+    border: 1px solid #6C63FF;
+    border-radius: 2px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    color:#6C63FF;
+}
+.btn.full{
+    background-color:#6C63FF;
+    color:white;
+}
+.col-6{
+    width: 45%;
+}
+.header{
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: #2F2E41;
+}
+.paragraph{
+    font-size: 20px;
+    line-height: 34px;
+    color: #9893A3;
+}
+.col-2 {
+    width: 20%;
+}
+.row{
+   display: flex; 
+   flex-wrap: wrap;
+}
+.partners_img_container{
+    width: 50%;
+}
+.partners{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 68px;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.mt-220{
+    margin-top: 220px;
+}
+.learn_more {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2F2E41;
+    background: rgb(197, 194, 255);
+    background: linear-gradient(0deg, rgba(197, 194, 255, 1) 52%, rgba(255, 255, 255, 1) 59%);
+    border: none;
+}
+.col-4{
+    width: 30%;
+}
+
+.starter {
+    background: rgba(236, 235, 255, 0.3);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 46px;
+
+}
+
+
+.starter p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #717082;
+}
+
+.starter h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #2F2E41;
+    margin: 30px;
+}
+.premium{
+    background: #6C63FF;
+}
+.premium p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.premium h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #fff;
+    margin: 30px;
+}
+.premium .btn{
+    background-color: #fff;
+    padding-left: 47px;
+    padding-right: 47px;
+    width: 186px;
+}
+.month{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.month_premium{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 56px;
+    text-align: center;
+    color: black;
+}
+.blog_header{
+    font-size: 60px;
+}
+.lets_talk{
+    background-color: #2F2E41;
+    padding:84px;
+}
+.lets_talk_h2{
+    font-size: 50px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.col-3{
+    width: 25%;
+}
+footer{
+    background-color: rgba(236, 235, 255, 0.6);;
+}
+.footer_container{
+    padding-top: 244px;
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-bottom: 40px;
+}
+.copyright_container{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.mobile_menu{
+    display: none;
+}
+
+@media only screen and (max-width: 2560px) {
+
+}
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
+.mobile_menu{
+    display: block;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: none;
+}
+.box_layout{
+    width: auto;
+}
+.partners{
+    width: auto;    
+}
+.col-12{
+    width: 100%;
+}
+.footer_container{
+    padding: 0;
+}
+.col-xs-6{
+    width: 50%;
+}
+.copyright_container{
+    padding: 0;
+}
+.header{
+    font-size: 50px;
+}
+.col-2{
+    width: 33.33%;
+}
+.col-1{
+    width: 5%;
+}
+}
