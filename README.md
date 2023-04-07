@@ -4,6 +4,6 @@
 ### L3 - forms. inputs, (methos, types,labels, registration-blog forms ...)
 ### L4 - Sections, class, columns, box model, CSS...
 ### L5 - selectors, Position properties, childs...
-### L6 - Figma, Responsive, Columnes
-### L7 - Animation,
-### L8 - Bootstrap
+### L6 - Figma, Responsive, Columnes, @Media
+### L7 - Animation, @Keyframes
+### L8 - Bootstrap, 
