@@ -7,5 +7,6 @@
 ### L6 - Figma, Responsive, Columnes, @Media
 ### L7 - Animation, @Keyframes
 ### L8 - Bootstrap, 
-### L9 - Javascript 1;
-### L10 - Javascript 2;
+### L9 - Javascript intro. variables;
+### L10 - Javascript functions, for;
+### L11 - OOP
