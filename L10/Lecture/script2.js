@@ -5,7 +5,7 @@
 // }
 // const people = ["Tom" , "Alice" , "BoB" , "Sam"]
 // for (let i = 0; i<people.length; i++){
-//     console.log(people[i])
+//     console.log(people[1])
 // }
 
 // for .. in
@@ -54,7 +54,7 @@
 
 // function display() {
 //     document.write("Hello World")
-//   }
+// //   }
 
 // display()
 
@@ -74,7 +74,7 @@
 //     console.log(z)
 //  }
 //  display(10)
-///////////13///welcomeMessage
+/////////13///welcomeMessage
 // function display(x,func) {
 
 //     // x= 13
@@ -134,7 +134,7 @@ let student = {
   age: 25,
   "Full name": "Tom Jones",
   dipslay: function () {
-    console.log(student.name);
+    console.log(student.age);
   },
 };
 
