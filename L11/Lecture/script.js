@@ -1,37 +1,37 @@
-const user = {};
-user.name = "Tom";
-user.age = 25;
-user.display = function () {
-  console.log(user.name);
-  console.log(user.age);
-};
+// const user = {};
+// user.name = "Tom";
+// user.age = 25;
+// user.display = function () {
+//   console.log(user.name);
+//   console.log(user.age);
+// };
 
-const hasNamePorp = "name" in user;
-console.log(hasNamePorp);
+// const hasNamePorp = "name" in user;
+// console.log(hasNamePorp);
 
-const hasWeightProp = "weight" in user;
-console.log(hasWeightProp);
+// const hasWeightProp = "weight" in user;
+// console.log(hasWeightProp);
 
-function createUser(pName, pAge) {
-  return {
-    name: pName,
-    age: pAge,
-    displayInfo: function () {
-      document.write("name" + this.name + "age" + this.age);
-    },
-    driveCar: function (car) {
-      console.log(car);
-      document.write(this.name + "drives car" + car.name);
-    },
-  };
-}
+// function createUser(pName, pAge) {
+//   return {
+//     name: pName,
+//     age: pAge,
+//     displayInfo: function () {
+//       document.write("name" + this.name + "age" + this.age);
+//     },
+//     driveCar: function (car) {
+//       console.log(car);
+//       document.write(this.name + "drives car" + car.name);
+//     },
+//   };
+// }
 
-function createCar(mName, mYear) {
-  return {
-    name: mName,
-    year: mYear,
-  };
-}
+// function createCar(mName, mYear) {
+//   return {
+//     name: mName,
+//     year: mYear,
+//   };
+// }
 
 // function User(pName,pAge) {
 //     this.name = pName,
@@ -41,7 +41,7 @@ function createCar(mName, mYear) {
 //      }
 //   }
 
-// Car type constructor
+// // Car type constructor
 // function Car(mName, mYear ) {
 //     this.name = mName,
 //     this.year = mYear,
@@ -105,63 +105,63 @@ function createCar(mName, mYear) {
 // document.write(apxo.getAge())
 // apxo.setAge(32)
 
-function User(name, age) {
-  this.name = name;
-  this.age = age;
-  this.go = function () {
-    document.write(this.name + " " + this.age);
-  };
-  this.displayInfo = function () {
-    document.write(this.name + this.age);
-  };
-}
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.go = function () {
+//     document.write(this.name + " " + this.age);
+//   };
+//   this.displayInfo = function () {
+//     document.write(this.name + this.age);
+//   };
+// }
 
-User.prototype.maxAge = 110;
+// User.prototype.maxAge = 110;
 
-function Employee(name, age, comp) {
-  User.call(this, name, age);
-  this.comapany = comp;
-  this.displayInfo = function () {
-    document.write(this.name + this.age + this.comapany);
-  };
-}
+// function Employee(name, age, comp) {
+//   User.call(this, name, age);
+//   this.comapany = comp;
+//   this.displayInfo = function () {
+//     document.write(this.name + this.age + this.comapany);
+//   };
+// }
 
-Employee.prototype = Object.create(User.prototype);
+// Employee.prototype = Object.create(User.prototype);
 
-const tom = new User("Tom", 26);
+// const tom = new User("Tom", 26);
 
-const bill = new Employee("Bill", 32, "Google");
+// const bill = new Employee("Bill", 32, "Google");
 
-// tom.go()
-// bill.go()
-tom.displayInfo();
-bill.displayInfo();
+// // tom.go()
+// // bill.go()
+// tom.displayInfo();
+// bill.displayInfo();
 
-function playGame() {
-  const coices = ["rock", "paper", "scissors"];
+// function playGame() {
+//   const coices = ["rock", "paper", "scissors"];
 
-  let playerCoice = prompt("Choose your player").toLowerCase();
+//   let playerCoice = prompt("Choose your player").toLowerCase();
 
-  while (!coices.includes(playerCoice)) {
-    playerCoice = prompt("ivalid choce").toLowerCase();
-  }
-  const computerCoice = coices[Math.floor(Math.random() * coices.length)];
+//   while (!coices.includes(playerCoice)) {
+//     playerCoice = prompt("ivalid choce").toLowerCase();
+//   }
+//   const computerCoice = coices[Math.floor(Math.random() * coices.length)];
 
-  let result;
+//   let result;
 
-  if (playerCoice === computerCoice) {
-    result = "Tie";
-  } else if (
-    (playerCoice === "rock" && computerCoice === "scissors") ||
-    (playerCoice === "paper" && computerCoice === "rock") ||
-    (playerCoice === "scissors" && computerCoice === "papers")
-  ) {
-    result = "You win";
-  } else {
-    result = "You lose";
-  }
+//   if (playerCoice === computerCoice) {
+//     result = "Tie";
+//   } else if (
+//     (playerCoice === "rock" && computerCoice === "scissors") ||
+//     (playerCoice === "paper" && computerCoice === "rock") ||
+//     (playerCoice === "scissors" && computerCoice === "papers")
+//   ) {
+//     result = "You win";
+//   } else {
+//     result = "You lose";
+//   }
 
-  alert(`you choouse ${playerCoice}, computer choose ${computerCoice}. ${result}`)
-}
+//   alert(`you choouse ${playerCoice}, computer choose ${computerCoice}. ${result}`)
+// }
 
-playGame()
+// playGame()
