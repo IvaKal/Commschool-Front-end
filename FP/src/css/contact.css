@@ -1,0 +1,68 @@
+.contact > h2{
+    text-align: center;
+    margin: 70px;
+}
+.contact{
+    padding: 25px;
+    flex-grow: 1;
+}
+.contact__details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact > div{
+    display: flex;
+    justify-content: space-around;
+}
+.contact span{
+    font-weight: bold;
+}
+.contact h3{
+    margin-top: auto;
+}
+.contact__details form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+ }
+.contact button{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: #323232;
+ }
+ .contact button:hover{
+    background-color: #444;
+    cursor: pointer;
+ }
+ .map {
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative
+ }
+
+ .map::after {
+    margin: -5px;
+    border-radius: 50px;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    box-shadow: inset 0px 0px 20px 20px whitesmoke
+ }
