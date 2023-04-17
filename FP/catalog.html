@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="/FP/src/css/catalog.css">
     <title>Catalog</title>
 </head>
+
 <body>
-    
+    <div class="main">
+        <header>
+            <a class="logo">
+                COSSY
+            </a>
+            <nav>
+                <a id="men_nav" href="catalog.html?gen=men">MEN</a>
+                <a id="women_nav"href="catalog.html?gen=women">WOMEN</a>
+                <div class="dropdown">
+                    <div class="dropdown__men">
+                        <a href="catalog.html?cat=sales&gen=men">Sales</a>
+                        <a href="catalog.html?cat=clothing&gen=men">Clothing</a>
+                        <a href="catalog.html?cat=shoes&gen=men">Shoes</a>
+                        <a href="catalog.html?cat=accessories&gen=men">Accessories</a>
+                        <a href="catalog.html?cat=self_care&gen=men">Self care</a>
+                        <a href="catalog.html?gen=men">View all</a>
+                    </div>
+                    <div class="dropdown__women">
+                        <a href="catalog.html?cat=sales&gen=women">Sales</a>
+                        <a href="catalog.html?cat=clothing&gen=women">Clothing</a>
+                        <a href="catalog.html?cat=shoes&gen=women">Shoes</a>
+                        <a href="catalog.html?cat=accessories&gen=women">Accessories</a>
+                        <a href="catalog.html?cat=self_care&gen=women">Self care</a>
+                        <a href="catalog.html?gen=women">View all</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="search">
+                <input type="text" />
+                <img src="src/img/search.svg" />
+            </div>
+            <div class="user_links">
+                <a>
+                    <img src="src/img/user.svg">
+                </a>
+                <a>
+                    <img src="src/img/contact.svg">
+                </a>
+                <a>
+                    <img src="src/img/cart.svg">
+                </a>
+            </div>
+        </header>
+        <div class="catalog">
+            <h2>New collection</h2>
+            <div class="grid"></div>
+        </div> 
+        <footer>
+            <div class="footer__list">
+                <ul>
+                    <li>HELP & INFORMATION</li>
+                    <li>Help</li>
+                    <li>Track order</li>
+                    <li>Delivery & returns</li>
+                    <li>Sitemap</li>
+                </ul>
+                <ul>
+                    <li>ABOUT COSSY</li>
+                    <li>About us</li>
+                    <li>Corporate responsibility</li>
+
+                </ul>
+                <ul>
+                    <li>CONTACT</li>
+                    <li>Contact us</li>
+                    <li>Location</li>
+                    <li>Socials</li>
+                </ul>
+                <ul>
+                    <li>SHOPPING FROM:</li>
+                    <li>You're in GEORGIA</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                Copyright © 2023
+            </div>
+        </footer>
+    </div>
+    <script src="src/js/script.js"> </script>
 </body>
+
 </html>

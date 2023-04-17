@@ -1,0 +1,28 @@
+.catalog .grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.catalog .grid img {
+    width: 100%;
+}
+.catalog .grid .title{
+    margin-top: 10px;
+}
+.catalog .grid .price{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.catalog h2{
+    text-align: center;
+    padding: 50px;
+}
+.catalog .grid a {
+   text-decoration: none;
+   color: #444;
+}
+.catalog .grid a:hover {
+    color: #323232;
+ }

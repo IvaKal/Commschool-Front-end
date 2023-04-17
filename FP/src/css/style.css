@@ -102,26 +102,36 @@ header .search input {
 }
 .user_links img {
   height: 24px;
+  padding: 2px;
 }
 .slider {
   position: relative;
 }
 .slider div{
-    width: 20%;
+    width: 25%;
     cursor: pointer;
     position: absolute;
-  
-  }
-.slider div.active img{
-    transform: scale(1.2);
+    left: 50%;
+    margin-left: -10%;
+    transition: transform 0.3s;
 }
-.slider div.active{
-    z-index: 9;
+.slider div:hover{
+  z-index: 4 !important;
 }
 .slider img {
   width: 100%;
-  transition: transform 0.2s, opacity 0.2s;
+  transition: transform 0.3s, filter 0.3s;
   border-radius: 10px;
+  filter: grayscale(80%);
+}
+.slider img:hover{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+
+}
+.slider > div.active >  img {
+  filter: grayscale(0%);
+  transform: scale(1);
 }
 .departments {
   flex-grow: 1;
