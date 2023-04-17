@@ -89,7 +89,9 @@ function catalog(data) {
   }
   for (let i = 0; i < data.length; i++) {
     const product = data[i];
-    if (gender == product.gender || gender == null) {
+    if ((gender == product.gender || gender == null) 
+    // && (category == product.category || category == null)
+    ) {
       const productElement = document.createElement("a");
       productElement.innerHTML = '<img src="' + product.image + '">';
       productElement.innerHTML += '<p class="title">' + product.title + "</p>";
@@ -123,13 +125,50 @@ function details(data) {
   description.innerHTML = product.description;
   price.innerHTML = "$" + product.price;
   button.addEventListener("click", function () {
-    if  (localStorage.cart == undefined) {
-      localStorage.cart = JSON.stringify([])
+    if (localStorage.cart == undefined) {
+      localStorage.cart = JSON.stringify([]);
     }
-    const cart = JSON.parse(localStorage.cart)
-    cart.push(product.id)
-    localStorage.cart = JSON.stringify(cart)
+    const cart = JSON.parse(localStorage.cart);
+    cart.push(product.id);
+    localStorage.cart = JSON.stringify(cart);
   });
+}
+function cart(data) {
+  const checkout = document.querySelector(".checkout")
+  if (checkout == null) {
+    return;
+  }
+  const checkoutCart = checkout.querySelector(".checkout__cart")
+  const totalElement = checkout.querySelector(".total")
+  let total = 0 
+  const cart = JSON.parse(localStorage.cart);
+  for (let i = 0; i < data.length; i++) {
+    const product = data[i];
+    if (cart.includes(product.id)) {
+      const quantity = cart.filter(function (v) {
+        return v === product.id;
+      }).length;
+      let html = '<div class="product"> <img src="' + product.image + '" >'
+      html += '<div class="product__info"><div class="title">' + product.title + ' </div>'
+      html += '<div class="price"><span>Price:</span> $' + product.price + '</div>'
+      html += '<div class="quantity"><span>Quantity:</span>'  + quantity + '</div>'
+      html += '</div></div>'
+      checkoutCart.innerHTML += html
+      total += product.price * quantity
+    }
+  }
+  totalElement.innerHTML += "Total: $" + total
+  const order = checkout.querySelector(".order")
+  const clear = checkout.querySelector(".clear")
+  order.addEventListener("click", function () {
+    localStorage.cart = '[]'
+    alert("order placed")
+    window.location.href="/FP/index.html"
+  })
+  clear.addEventListener("click", function () {
+    localStorage.cart = '[]'
+    window.location.href="/FP/index.html"
+  })
 }
 async function fetchData() {
   const response = await fetch("/FP/src/data/stock.json");
@@ -137,6 +176,7 @@ async function fetchData() {
   slider(data);
   catalog(data);
   details(data);
+  cart(data);
 }
 
 fetchData();

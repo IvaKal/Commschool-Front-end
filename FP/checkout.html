@@ -13,7 +13,7 @@
 <body>
     <div class="main">
         <header>
-            <a class="logo">
+            <a class="logo" href="/FP/">
                 COSSY
             </a>
             <nav>
@@ -46,17 +46,77 @@
                 <a>
                     <img src="src/img/user.svg">
                 </a>
-                <a>
+                <a href="contact.html">
                     <img src="src/img/contact.svg">
                 </a>
-                <a>
+                <a href="checkout.html">
                     <img src="src/img/cart.svg">
                 </a>
             </div>
         </header>
-        <div class="check_out">
-            <h2>Check out</h2>
-        </div> 
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <div class="checkout__blocks">
+                <form>
+                    <div>
+                        <label>
+                            Name
+                        </label>
+                        <input type="text" name="name" placeholder="Full Name" />
+                    </div>
+                    <div>
+                        <label>
+                            Email
+                        </label>
+                        <input type="email" name="email" placeholder="Your Email" />
+                    </div>
+                    <div>
+                        <label>
+                            Country
+                        </label>
+                        <input type="text" name="country" placeholder="Country" />
+                    </div>
+                    <div>
+                        <label>
+                            City
+                        </label>
+                        <input type="text" name="city" placeholder="City" />
+                    </div>
+                    <div>
+                        <label>
+                            Delivery address
+                        </label>
+                        <input type="text" name="address" placeholder="Address" />
+                    </div>
+                    <div>
+                        <label>
+                            Postal code
+                        </label>
+                        <input type="tex" name="code" placeholder="Postal Code" />
+                    </div>
+                    <div>
+                        <label>
+                            Mobile number
+                        </label>
+                        <input type="text" name="address" placeholder="Full" />
+                    </div>
+                    <div>
+                        <label>
+                            Card number
+                        </label>
+                        <input type="text" name="card" placeholder="Card Number" />
+                    </div>
+                </form>
+                <div class="checkout__cart">
+
+                </div>
+            </div>
+            <div class="actions">
+                <div class="total"></div>
+                <button class="order">PLACE ORDER</button>
+                <button class="clear">CLEAR</button>
+            </div>
+        </div>
         <footer>
             <div class="footer__list">
                 <ul>
@@ -74,8 +134,8 @@
                 </ul>
                 <ul>
                     <li>CONTACT</li>
-                    <li>Contact us</li>
-                    <li>Location</li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="contact.html">Location</a></li>
                     <li>Socials</li>
                 </ul>
                 <ul>
