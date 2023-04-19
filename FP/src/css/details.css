@@ -37,7 +37,28 @@
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 700px){
+    .details{
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        gap: 20px;
+    }
+    .details img {
+        width: 100%;
+        height: auto;
+    }
+    .details__text{
+        max-width: 100%;
+        
+    }
+    .details p {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+}
 
 
 

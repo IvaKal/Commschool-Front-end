@@ -90,3 +90,16 @@
     border: none;
     padding: 3px;
 }
+
+@media screen and (max-width: 700px){
+    .checkout__blocks{
+        flex-wrap: wrap;
+    }
+    .actions{
+        margin: 0;
+        width: auto;    
+    }
+    .checkout__cart {
+        margin-top: 30px;
+    }
+}

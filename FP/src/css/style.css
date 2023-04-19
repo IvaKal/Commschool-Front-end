@@ -1,3 +1,6 @@
+@import url(animations.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   margin: 0;
 }
@@ -6,7 +9,7 @@ html {
 }
 body {
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
   color: #323232;
   min-height: 100%;
@@ -42,7 +45,13 @@ header nav {
   display: flex;
   height: 100%;
 }
-header nav > a {
+
+#men_nav,
+#women_nav {
+  display: flex;
+}
+
+header nav > div > a {
   color: whitesmoke;
   padding-left: 15px;
   padding-right: 15px;
@@ -50,7 +59,8 @@ header nav > a {
   align-items: center;
   font-size: 14px;
 }
-header nav > a:hover {
+
+header nav > div > a:hover {
   background-color: #444;
 }
 header nav .dropdown {
@@ -60,6 +70,7 @@ header nav .dropdown {
   display: flex;
   width: 100%;
   justify-content: center;
+  z-index: 9;
 }
 header nav .dropdown div {
   display: none;
@@ -100,6 +111,10 @@ header .search input {
   padding-left: 10px;
   border-radius: 50px;
 }
+header .mobile_menu,
+header .burger {
+  display: none;
+}
 .user_links img {
   height: 24px;
   padding: 2px;
@@ -109,6 +124,7 @@ footer .footer__list {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+  flex-wrap: wrap;
 }
 footer .footer__list ul {
   list-style: none;
@@ -130,7 +146,58 @@ footer .copyright {
   text-align: right;
   padding: 10px;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: #323232;
+}
+
+@media screen and (max-width: 700px) {
+  header nav > div > a {
+    pointer-events: none;
+  }
+  header .search,
+  header .user_links {
+    display: none;
+  }
+  header .burger {
+    display: block;
+    margin-left: auto;
+  }
+  .mobile_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+  .mobile_menu.open {
+    animation-name: mobileMenuPopup;
+    animation-duration: 0.4s;
+    display: flex;
+  }
+  header nav .dropdown > div {
+    flex-direction: column;
+  }
+
+  header .mobile_menu .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header .mobile_menu > a {
+    color: #323232;
+    font-size: 20px;
+    
+  }
+  .footer__list ul{
+    width: 50%;
+    box-sizing: border-box;
+  }
 }

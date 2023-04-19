@@ -67,3 +67,8 @@ textarea {
     height: calc(100% + 10px);
     box-shadow: inset 0px 0px 20px 20px whitesmoke
  }
+ @media screen and (max-width: 700px) {
+    .map {
+        display: none;
+    }
+  }

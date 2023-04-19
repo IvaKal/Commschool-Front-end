@@ -4,6 +4,9 @@ function setupNav() {
   const womenLink = navElement.querySelector("#women_nav");
   const dropdownMen = navElement.querySelector(".dropdown__men");
   const dropdownWomen = navElement.querySelector(".dropdown__women");
+  const burger = document.querySelector("header .burger");
+  const mobileMenu = document.querySelector('header .mobile_menu')
+  const mobileMenuClose = mobileMenu.querySelector(".close")
   menLink.addEventListener("mouseenter", function () {
     dropdownMen.classList.add("open");
     dropdownWomen.classList.remove("open");
@@ -17,6 +20,12 @@ function setupNav() {
     dropdownMen.classList.remove("open");
     dropdownWomen.classList.remove("open");
   });
+  burger.addEventListener("click", function () {
+    mobileMenu.classList.add("open");
+  })
+  mobileMenuClose.addEventListener("click", function () {
+    mobileMenu.classList.remove("open");
+  })
 }
 
 setupNav();
