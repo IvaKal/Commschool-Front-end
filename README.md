@@ -14,3 +14,11 @@
 ### L13 - Counter, SASS, Canvas
 ### L14 - Local storages, API, Json, Async...
 ### L15 - 
+### L17 - 
+### L18 - 
+### L19 - 
+### L20 - 
+### L21 - 
+### L22 - 
+### L23 - 
+
