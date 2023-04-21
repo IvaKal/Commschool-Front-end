@@ -106,7 +106,7 @@ function catalog(data) {
       productElement.innerHTML += '<p class="title">' + product.title + "</p>";
       productElement.innerHTML +=
         '<p class="price"> $' + product.price + "</p>";
-      productElement.href = "/FP/details.html?id=" + product.id;
+      productElement.href = "details.html?id=" + product.id;
       catalog.appendChild(productElement);
     }
   }
@@ -172,15 +172,15 @@ function cart(data) {
   order.addEventListener("click", function () {
     localStorage.cart = '[]'
     alert("order placed")
-    window.location.href="/FP/index.html"
+    window.location.href="index.html"
   })
   clear.addEventListener("click", function () {
     localStorage.cart = '[]'
-    window.location.href="/FP/index.html"
+    window.location.href="index.html"
   })
 }
 async function fetchData() {
-  const response = await fetch("/FP/src/data/stock.json");
+  const response = await fetch("src/data/stock.json");
   const data = await response.json();
   slider(data);
   catalog(data);
